@@ -13,15 +13,21 @@ public class MenueAuswahl {
         eingabe = eingabezahl.nextInt();
 
         switch(eingabe) {
-            case 1:  Rechteck a = new Rechteck();
-                a.berechnen();
-                break;
-            case 2:   Dreieck b = new Dreieck();
-                b.berechnen();
-                break;
-            case 3:  Kreis c = new Kreis();
-                c.methodenAuswahl();
-                break;
+            try {
+
+                case 1:
+                    Rechteck a = new Rechteck();
+                    a.berechnen();
+                    break;
+                case 2:
+                    Dreieck b = new Dreieck();
+                    b.berechnen();
+                    break;
+                case 3:
+                    Kreis c = new Kreis();
+                    c.methodenAuswahl();
+                    break;
+            }
     }
 
 
